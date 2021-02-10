@@ -32,6 +32,8 @@ services:
     container_name: urbackupclient
     hostname: urbackupclient
     image: diffra/urbackup-client
+    environment:
+      - COMPUTERNAME=unraid
     volumes:
       - /mnt/user/Vault:/backup/vault
       - /mnt/user/Media:/backup/media
