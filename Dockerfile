@@ -1,11 +1,11 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
-LABEL maintainer="henrik@hejare.se"
+LABEL maintainer="james@bertelson.me"
 
 # Install the UrBackup client
 WORKDIR /tmp/install
-ADD urbackupclient_install_2.4.9.sh /tmp/install
-RUN sh urbackupclient_install_2.4.9.sh silent
+ADD urbackupclient_install_2.4.11.sh /tmp/install
+RUN sh urbackupclient_install_2.4.11.sh silent
 RUN rm -rf /tmp/install
 
 # Make ports available to the world outside this container
