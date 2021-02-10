@@ -33,7 +33,7 @@ services:
     hostname: urbackupclient
     image: diffra/urbackup-client
     environment:
-      - COMPUTERNAME=unraid
+      - COMPUTERNAME=NameToDisplayInUrBackup
     volumes:
       - /mnt/user/Vault:/backup/vault
       - /mnt/user/Media:/backup/media
