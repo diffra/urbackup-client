@@ -1,0 +1,15 @@
+version: '2'
+services:
+  urbackupclient:
+    container_name: urbackupclient
+    hostname: urbackupclient
+    image: diffra/urbackup-client
+    environment:
+      - COMPUTERNAME=NameToDisplayInUrBackup
+    volumes:
+      - /mnt/user/Vault:/backup/vault
+      - /mnt/user/Media:/backup/media
+    ports:
+      - 35621:35621
+      - 35622:35622
+      - 35623:35623
