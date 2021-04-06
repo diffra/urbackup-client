@@ -54,7 +54,7 @@ docker run \
   -e INTERNET_MODE_ENABLED=true \
   -e INTERNET_SERVER=<your-server-name-or-ip> \
   -e INTERNET_AUTHKEY=<your-client-authkey> \
-  hejare/urbackup-client
+  diffra/urbackup-client
 ```
 
 There is also an optional parameter ```INTERNET_SERVER_PORT``` that defaults to 55415.
